@@ -1,0 +1,60 @@
+{
+  "doctype": "DocType",
+  "name": "Passenger",
+  "module": "Passengers",
+  "custom": 1,
+  "fields": [
+    {
+      "fieldname": "first_name",
+      "fieldtype": "Data",
+      "label": "First Name"
+    },
+    {
+      "fieldname": "last_name",
+      "fieldtype": "Data",
+      "label": "Last Name"
+    },
+    {
+      "fieldname": "cpr_number",
+      "fieldtype": "Data",
+      "label": "CPR Number"
+    },
+    {
+      "fieldname": "passport_number",
+      "fieldtype": "Data",
+      "label": "Passport Number"
+    },
+    {
+      "fieldname": "nationality",
+      "fieldtype": "Data",
+      "label": "Nationality"
+    },
+    {
+      "fieldname": "date_of_birth",
+      "fieldtype": "Date",
+      "label": "Date of Birth"
+    },
+    {
+      "fieldname": "gender",
+      "fieldtype": "Select",
+      "label": "Gender",
+      "options": "\nMale\nFemale"
+    },
+    {
+      "fieldname": "photo",
+      "fieldtype": "Attach Image",
+      "label": "Photo"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ],
+  "issingle": 0,
+  "autoname": "field:first_name"
+}

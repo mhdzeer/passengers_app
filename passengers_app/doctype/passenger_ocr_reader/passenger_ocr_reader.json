@@ -1,0 +1,35 @@
+{
+  "doctype": "DocType",
+  "name": "Passenger OCR Reader",
+  "module": "Passengers",
+  "custom": 1,
+  "fields": [
+    {
+      "fieldname": "image",
+      "fieldtype": "Attach Image",
+      "label": "Upload Image"
+    },
+    {
+      "fieldname": "recognized_text",
+      "fieldtype": "Long Text",
+      "label": "Recognized Text (Raw OCR Output)"
+    },
+    {
+      "fieldname": "passenger",
+      "fieldtype": "Link",
+      "options": "Passenger",
+      "label": "Passenger"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ],
+  "issingle": 0,
+  "autoname": "field:image"
+}
