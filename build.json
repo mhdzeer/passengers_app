@@ -1,0 +1,8 @@
+{
+  "css/passengers_app.css": [
+    "public/css/passengers_app.css"
+  ],
+  "js/passengers_app.js": [
+    "public/js/passengers_app.js"
+  ]
+}
